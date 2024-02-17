@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.time.temporal.IsoFields;
 import groovy.json.JsonSlurper
 
-def call() {
+def getBuildVersion() {
      def jsonSlurper = new JsonSlurper()
     def buildInfo = jsonSlurper.parse(new File('buildInfo.json'))
     println "buildInfo = $buildInfo"
