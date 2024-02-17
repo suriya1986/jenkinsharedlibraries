@@ -10,6 +10,5 @@ def call() {
     // echo "Hello, ${buildInfo.buildVersion}."
     def date = new Date()
     echo LocalDate.now().get(IsoFields.QUARTER_OF_YEAR).toString();
-    echo "Hello, ${name}."
     echo this.currentBuild.displayName
 }
