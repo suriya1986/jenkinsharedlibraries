@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.time.temporal.IsoFields;
 import groovy.json.JsonSlurper
 
-def call() {
+def call(buildInfoJsonFilePath="build/buildInfo.json") {
     assert GIT_BRANCH != null
     assert BUILD_NUMBER != null
  
